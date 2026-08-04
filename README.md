@@ -4,7 +4,7 @@ Monitors the Maldives Gazzette Iulaan feed for new listings from the **Male City
 
 ## How it works
 
-1. Queries today's listings from the Gazzette search API: `https://gazzette.idhaan.me/search`
+1. Queries today's listings from the Idhaan's Gazzette search wrapper API: `https://gazzette.idhaan.me/search`
 2. Filters results client-side to the target office, matching either:
    - the Dhivehi vendor name `މާލޭ ސިޓީ ކައުންސިލްގެ އިދާރާ`, or
    - the English slug `secretariat-of-the-male-city-council` in `vendor_url`
@@ -85,3 +85,7 @@ The vendor name/slug for an office can be found in the `vendor` / `vendor_url` f
 | `gazzet.sh` | The main publisher script |
 | `api.md` | Reference for the Gazzette search API |
 | `cron.log` | Output log from scheduled runs |
+
+## Shoutout
+
+big thanks to [Idhaan](https://dev.idhaan.me) for his wrapper aroung gazzet api for making this 100x less painful and simpler
